@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\content;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', [
+        "test" => content::all(),
+    ]);
 });
+Route::get('/add-new-content', function () {
+    return view('add-new-content');
+});
+Route::get('/edit-content', function ()
+    {
+        return view('edit-content');
+    });  
