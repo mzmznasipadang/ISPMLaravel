@@ -40,3 +40,14 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Aknowledgement
 
 The ISPM Laravel Project is open-sourced for "New Recruitment - IS Lab Website" project using Laravel. If you need help with this project, kindly hit me on mail at admin@naspadstudio.my.id!
+
+
+## Docker Ready :D
+
+To install docker with this project
+
+First, build the docker image using `docker build <buildpath> -t ispmlaravel`
+
+Then, run `docker run -d -p 81:8000 --name backend ispmlaravel`
+
+Voila! Happy coding :D
