@@ -19,10 +19,11 @@ Route::get('/', function () {
         "test" => content::all(),
     ]);
 });
+
 Route::get('/add-new-content', function () {
     return view('add-new-content');
 });
-Route::get('/edit-content', function ()
-    {
-        return view('edit-content');
-    });  
+
+Route::get('/edit-content', function () {
+    return view('edit-content');
+});

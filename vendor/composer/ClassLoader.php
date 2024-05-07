@@ -45,7 +45,7 @@ class ClassLoader
     /** @var \Closure(string):void */
     private static $includeFile;
 
-    /** @var ?string */
+    /** @var string|null */
     private $vendorDir;
 
     // PSR-4
@@ -423,7 +423,8 @@ class ClassLoader
     public function loadClass($class)
     {
         if ($file = $this->findFile($class)) {
-            (self::$includeFile)($file);
+            $includeFile = self::$includeFile;
+            $includeFile($file);
 
             return true;
         }
@@ -554,7 +555,10 @@ class ClassLoader
         return false;
     }
 
-    private static function initializeIncludeClosure(): void
+    /**
+     * @return void
+     */
+    private static function initializeIncludeClosure()
     {
         if (self::$includeFile !== null) {
             return;
@@ -568,8 +572,8 @@ class ClassLoader
          * @param  string $file
          * @return void
          */
-        self::$includeFile = static function($file) {
+        self::$includeFile = \Closure::bind(static function($file) {
             include $file;
-        };
+        }, null, null);
     }
 }
