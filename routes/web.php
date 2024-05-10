@@ -20,6 +20,12 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/loginPage', function () {
+    return view('loginPage', [
+        "test" => content::all(),
+    ]);
+});
+
 Route::get('/add-new-content', function () {
     return view('add-new-content');
 });
