@@ -22,6 +22,10 @@
           <br>
           a student from the School of Information Systems.
       </p>
+<<<<<<< HEAD
       <a href="{{ url('/formpta') }}"><button class="btn">Register Now</button></a>
+=======
+      <a href="loginPage" class="btn">Register Now</a>
+>>>>>>> 205a3d75786cecece2b6bbcbc4f1f254221a5709
   </div>
 </div>

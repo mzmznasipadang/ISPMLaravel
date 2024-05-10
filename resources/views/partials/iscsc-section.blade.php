@@ -17,9 +17,13 @@
           to IT) to UI/UX design challenges
           <br>
       </p>
+<<<<<<< HEAD
       <a href="{{ url('/formiscsc') }}"><button class="btn">Register Now</button></a>
+=======
+      <a href="loginPage" class="btn">Register Now</a>
+>>>>>>> 205a3d75786cecece2b6bbcbc4f1f254221a5709
   </div>
-  <div class="col-md-6 order-sm-1 order-md-2" id="hero">
+  <div class="col-md-6 order-sm-1 order-md-2" id="iscsc-hero">
       <img src="/image/image-9.png" alt="">
   </div>
 </div>

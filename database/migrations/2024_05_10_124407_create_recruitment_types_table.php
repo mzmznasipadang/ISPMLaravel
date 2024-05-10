@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePeriodsTable extends Migration
+class CreateRecruitmentTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,17 @@ class CreatePeriodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('periods', function (Blueprint $table) {
+        Schema::disableForeignKeyConstraints();
+
+        Schema::create('recruitment_types', function (Blueprint $table) {
             $table->id();
-            $table->integer('year')->length(4);
-            $table->string('period_name');
-            $table->string('category');
-            $table->string('batch');
+            $table->string('type_name');
+            $table->text('description');
+            $table->string('icon');
             $table->timestamps();
         });
+
+        Schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -30,6 +33,6 @@ class CreatePeriodsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('periods');
+        Schema::dropIfExists('recruitment_types');
     }
 }

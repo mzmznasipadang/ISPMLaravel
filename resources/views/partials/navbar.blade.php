@@ -11,7 +11,11 @@
         <a class="nav-link" aria-current="page" href="#section-1">IS Case Study Club Member</a>
         <a class="nav-link" aria-current="page" href="#section-2">IS Part-Time Lab Assistant</a>
         <a class="nav-link" aria-current="page" href="#section-3">IS Project Member</a>
+<<<<<<< HEAD
         <a class="nav-link ms-lg-6 " aria-current="page" href="{{ url('/auth/redirect') }}">Sign-In
+=======
+        <a class="nav-link ms-lg-6 " aria-current="page" href="loginPage">Sign-In
+>>>>>>> 205a3d75786cecece2b6bbcbc4f1f254221a5709
           <img class="icon-signin" src="/image/icon-signin.png" alt="">
         </a>
       </div>

@@ -16,7 +16,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('landing-page');
+=======
+    return view('landing-page', [
+        // "test" => content::all(),
+    ]);
+});
+
+Route::get('/loginPage', function () {
+    return view('loginPage', [
+        "test" => content::all(),
+    ]);
+});
+
+Route::get('/add-new-content', function () {
+    return view('add-new-content');
+});
+
+Route::get('/edit-content', function () {
+    return view('edit-content');
+>>>>>>> 205a3d75786cecece2b6bbcbc4f1f254221a5709
 });
 Route::get('/auth/redirect', [AuthController::class, 'redirect']);
 Route::get('/auth/callback', [AuthController::class, 'callback']);
