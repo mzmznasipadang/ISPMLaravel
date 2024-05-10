@@ -22,6 +22,6 @@
           <br>
           a student from the School of Information Systems.
       </p>
-      <button class="btn">Register Now</button>
+      <a href="loginPage" class="btn">Register Now</a>
   </div>
 </div>

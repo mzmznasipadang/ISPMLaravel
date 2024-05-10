@@ -17,7 +17,7 @@
           to IT) to UI/UX design challenges
           <br>
       </p>
-      <button class="btn">Register Now</button>
+      <a href="loginPage" class="btn">Register Now</a>
   </div>
   <div class="col-md-6 order-sm-1 order-md-2" id="hero">
       <img src="/image/image-9.png" alt="">

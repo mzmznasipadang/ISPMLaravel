@@ -24,6 +24,6 @@
           <br>
           receiving guidance from senior IS Lab members.
       </p>
-      <button class="btn">Register Now</button>
+      <a href="loginPage" class="btn">Register Now</a>
   </div>
 </div>
