@@ -19,7 +19,7 @@
       </p>
       <a href="loginPage" class="btn">Register Now</a>
   </div>
-  <div class="col-md-6 order-sm-1 order-md-2" id="hero">
+  <div class="col-md-6 order-sm-1 order-md-2" id="iscsc-hero">
       <img src="/image/image-9.png" alt="">
   </div>
 </div>
